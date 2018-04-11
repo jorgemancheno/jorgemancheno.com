@@ -1,0 +1,36 @@
+$title-text: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-text: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$body-size: 14px;
+
+$header-bg: rgba(255,255,255,1);
+$header-width-lg: 220px;
+$header-width-xl: 260px;
+
+$content-bg: rgba(245,245,245,1);
+$content-bg-invert: rgba(11,14,19,1);
+
+$dark-base-color: rgba(11,14,19,1);
+$dark-primary-color: transparentize($dark-base-color, 0.25);
+$dark-secondary-color: transparentize($dark-base-color, 0.5);
+$dark-hint-color: transparentize($dark-base-color, 0.65);
+$dark-divider-color: transparentize($dark-base-color, 0.85);
+$dark-divider-alt-color: transparentize($dark-base-color, 0.95);
+
+$light-base-color: rgba(255,255,255,1);
+$light-primary-color: transparentize($light-base-color, 0.25);
+$light-secondary-color: transparentize($light-base-color, 0.5);
+$light-hint-color: transparentize($light-base-color, 0.65);
+$light-divider-color: transparentize($light-base-color, 0.85);
+$light-divider-alt-color: transparentize($light-base-color, 0.95);
+
+$link-color: rgba(93,115,224,1);
+$link-hover-color: rgba(43,40,234,1);
+$link-active-color: darken($link-hover-color, 15%);
+
+$font-size-sm: 1.4rem;
+$font-size-md: 1.6rem;
+$font-size-lg: 1.8rem;
+
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;

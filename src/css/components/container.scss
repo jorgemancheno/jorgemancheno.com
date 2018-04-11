@@ -1,0 +1,27 @@
+#container-content {
+  padding: $spacing-lg 0;
+}
+
+@include device-md {
+  #container-content {
+    padding: ($spacing-lg * 2) 0;
+  }
+}
+@include device-lg {
+  #container {
+    height: 100vh;
+    overflow: auto;
+    width: calc(100vw - #{$header-width-lg});
+  }
+  #container-content {
+    padding: ($spacing-lg * 3) 0;
+  }
+}
+@include device-xl {
+  #container {
+    width: calc(100vw - #{$header-width-xl});
+  }
+  #container-content {
+    padding: ($spacing-lg * 3) 0;
+  }
+}

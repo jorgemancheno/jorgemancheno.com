@@ -1,0 +1,125 @@
+.button-group {
+  display: flex;
+  flex-direction: row;
+
+  & > .button-group {
+    .button {
+      border-right-width: 0;
+
+      &:first-child {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      &:last-child {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-right-width: 1px;
+      }
+    }
+  }
+}
+.button {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: none;
+  color: $link-color;
+  cursor: pointer;
+  display: inline-block;
+  font-size: inherit;
+  outline: none;
+  padding: $spacing-sm;
+  text-align: center;
+  transition: all 0.25s;
+  -webkit-appearance: none;
+
+  &:hover {
+    background-color: $light-secondary-color;
+    box-shadow: 0 1px 3px $dark-divider-color;
+  }
+  &:active,
+  &:active:hover {
+    background-color: $dark-divider-color;
+    box-shadow: 0 1px 1px $dark-divider-color;
+  }
+}
+
+.button--outline {
+  background-color: transparent;
+  border: 1px solid $dark-hint-color;
+  color: $dark-primary-color;
+  font-weight: 500;
+
+  &:hover,
+  &:active,
+  &:active:hover {
+    box-shadow: none;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border-color: $link-hover-color;
+    color: $link-hover-color;
+  }
+
+  &:active,
+  &:active:hover {
+    background-color: transparentize($link-active-color, 0.9);
+    border-color: $link-active-color;
+    color: $link-active-color;
+    transform: scale(0.98);
+  }
+}
+.button--full {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.button--sm {
+  font-size: $font-size-sm;
+  padding: $spacing-sm;
+}
+.button--md {
+  font-size: $font-size-md;
+  padding: $spacing-md;
+}
+.button--lg {
+  font-size: $font-size-lg;
+  padding: $spacing-lg;
+}
+
+@include device-lg {
+  .button {
+    padding: $spacing-md;
+  }
+  .button--sm {
+    font-size: $font-size-sm;
+    padding: $spacing-sm;
+  }
+  .button--md {
+    font-size: $font-size-md;
+    padding: $spacing-md;
+  }
+  .button--lg {
+    font-size: $font-size-lg;
+    padding: $spacing-lg;
+  }
+}
+@include device-xl {
+  .button {
+    padding: $spacing-lg;
+  }
+  .button--sm {
+    font-size: $font-size-sm;
+    padding: $spacing-sm;
+  }
+  .button--md {
+    font-size: $font-size-md;
+    padding: $spacing-md;
+  }
+  .button--lg {
+    font-size: $font-size-lg;
+    padding: $spacing-lg;
+  }
+}

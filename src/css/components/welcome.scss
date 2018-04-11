@@ -1,0 +1,24 @@
+#welcome {
+  font-family: $title-text;
+  font-size: 3rem;
+  margin-bottom: ($spacing-lg * 2);
+  padding: ($spacing-lg * 2) 0;
+}
+@include device-md {
+  #welcome {
+    font-size: 4rem;
+    padding: ($spacing-lg * 5) 0;
+  }
+}
+@include device-lg {
+  #welcome {
+    font-size: 5rem;
+    padding: ($spacing-lg * 5) 0;
+  }
+}
+@include device-xl {
+  #welcome {
+    font-size: 5rem;
+    padding: ($spacing-lg * 5) 0;
+  }
+}

@@ -1,0 +1,11 @@
+# Project dependencies
+# https://docs.npmjs.com/cli/shrinkwrap#caveats
+.cache
+node_modules
+yarn-error.log
+
+# Build directory
+public/
+
+# System
+.DS_Store

@@ -1,0 +1,96 @@
+html, body {
+  font-family: $body-text;
+  font-size: 62.5%;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+body {
+  background-color: $content-bg;
+  color: $dark-base-color;
+  font: $body-size $body-text;
+  text-rendering: optimizeLegibility;
+
+  &.invert {
+    background-color: $content-bg-invert;
+  }
+}
+@include device-md {
+  body {
+    font-size: 16px;
+  }
+}
+@include device-lg {
+  body {
+    font-size: 18px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: bold;
+}
+p {
+  line-height: 150%;
+  margin: 0 0 $spacing-lg;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+a {
+  box-shadow: 0 2px 0 $link-color;
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.4s;
+
+  &:hover {
+    box-shadow: 0 2px 0 $link-hover-color;
+    color: $link-hover-color;
+  }
+
+  &:active,
+  &:active:hover {
+    box-shadow: 0 2px 0 $link-active-color;
+    color: $link-active-color;
+  }
+}
+
+dl {
+  dt {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  dd {
+    color: $dark-secondary-color;
+    margin-bottom: $spacing-lg;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.invert {
+  color: $light-base-color;
+
+  a {
+    box-shadow: 0 2px 0 lighten($link-color, 10);
+
+    &:hover {
+      box-shadow: 0 2px 0 lighten($link-hover-color, 20);
+      color: lighten($link-hover-color, 20);
+    }
+    &:active,
+    &:active:hover {
+      box-shadow: 0 2px 0 lighten($link-active-color, 20);
+      color: lighten($link-active-color, 20);
+    }
+  }
+}

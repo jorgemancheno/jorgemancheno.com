@@ -1,0 +1,12 @@
+.gravatar {
+  border-radius: 50%;
+  display: flex;
+  margin: auto;
+  width: 16rem;
+}
+
+@include device-sm {
+  .gravatar {
+    width: 10rem;
+  }
+}

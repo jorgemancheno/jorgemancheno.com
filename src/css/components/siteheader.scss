@@ -30,6 +30,7 @@
 }
 
 #header-nav {
+  font-family: $title-text;
   max-width: 80%;
   margin: 0 auto;
 
@@ -49,7 +50,7 @@
         &.selected {
           box-shadow: 0 2px 0 $link-color;
           color: $dark-base-color;
-          font-weight: 500;
+          font-weight: 600;
         }
 
         &:hover,

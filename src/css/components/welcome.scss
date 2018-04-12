@@ -3,6 +3,10 @@
   font-size: 3rem;
   margin-bottom: ($spacing-lg * 2);
   padding: ($spacing-lg * 2) 0;
+
+  p {
+    line-height: 125%;
+  }
 }
 @include device-md {
   #welcome {

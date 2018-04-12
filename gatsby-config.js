@@ -40,6 +40,14 @@ module.exports = {
         respectDNT: true,
       }
     },
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: [
+          `nunito sans\:400,400i,600,700`,
+        ],
+      }
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',

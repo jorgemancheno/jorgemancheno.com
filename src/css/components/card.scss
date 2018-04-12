@@ -5,6 +5,13 @@
   background-color: $dark-divider-color;
   box-shadow: 0 1px 2px $dark-divider-color;
   position: relative;
+  transition-property: box-shadow, transform;
+  transition-duration: 0.25s;
+
+  &:hover {
+    box-shadow: 0 10px 30px $dark-secondary-color;
+    transform: translateY(-5px);
+  }
 }
 .card-thumbnail {
   overflow: hidden;

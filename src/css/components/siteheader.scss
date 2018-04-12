@@ -15,9 +15,11 @@
     width: 80px;
   }
   a {
-    box-shadow: none !important;
     margin: 0 auto;
 
+    &:after {
+      display: none;
+    }
     &:hover {
       opacity: 0.5;
     }
@@ -45,24 +47,32 @@
       margin: $spacing-lg 0;
 
       a {
-        box-shadow: 0 2px 0 transparent;
-
+        &:after {
+          background-color: transparent;
+        }
         &.selected {
-          box-shadow: 0 2px 0 $link-color;
           color: $dark-base-color;
           font-weight: 600;
-        }
 
+          &:after {
+            background-color: $link-color;
+          }
+        }
         &:hover,
         &.selected:hover {
-          box-shadow: 0 2px 0 $link-hover-color;
           color: $link-hover-color;
-        }
 
+          &:after {
+            background-color: $link-hover-color;
+          }
+        }
         &:active,
         &:active:hover {
-          box-shadow: 0 2px 0 $link-active-color;
           color: $link-active-color;
+
+          &:after {
+            background-color: $link-active-color;
+          }
         }
       }
     }
@@ -82,9 +92,11 @@
     margin-right: $spacing-lg;
 
     a {
-      box-shadow: none !important;
       display: block;
 
+      &:after {
+        display: none;
+      }
       &:hover {
         opacity: 0.5;
       }

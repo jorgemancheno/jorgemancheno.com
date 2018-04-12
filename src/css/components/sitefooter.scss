@@ -4,10 +4,21 @@
   margin-bottom: ($spacing-lg * 2);
 
   a {
-    box-shadow: 0 1px 0 $dark-hint-color;
-
-    &:hover {
-      box-shadow: 0 1px 0 $link-hover-color;
+    &:after {
+      background-color: $dark-hint-color;
+      height: 1px;
+      transform: translateY(-1px);
+    }
+    &:hover:after {
+      background-color: $link-hover-color;
+      transform: translateY(1px);
+    }
+    &:active,
+    &:active:hover {
+      &:after {
+        background-color: $link-active-color;
+        transform: translateY(0);
+      }
     }
   }
 }
@@ -40,14 +51,17 @@
   color: $light-hint-color;
 
   a {
-    box-shadow: 0 1px 0 $light-hint-color;
-
-    &:hover {
-      box-shadow: 0 1px 0 lighten($link-hover-color, 20);
+    &:after {
+      background-color: $light-hint-color;
+    }
+    &:hover:after {
+      background-color: lighten($link-hover-color, 20);
     }
     &:active,
     &:active:hover {
-      box-shadow: 0 1px 0 lighten($link-active-color, 20);
+      &:after {
+        background-color: lighten($link-active-color, 20);
+      }
     }
   }
 }

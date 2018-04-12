@@ -7,6 +7,21 @@
   p {
     line-height: 125%;
   }
+  a {
+    &:after {
+      height: 0.08em;
+      transform: translateY(-0.08em);
+    }
+    &:hover:after {
+      transform: translateY(0.08em);
+    }
+    &:active,
+    &:active:hover {
+      &:after {
+        transform: translateY(0);
+      }
+    }
+  }
 }
 @include device-md {
   #welcome {

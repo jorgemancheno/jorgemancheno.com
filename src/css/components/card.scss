@@ -24,7 +24,9 @@
   &:hover,
   &:active,
   &:active:hover {
-    box-shadow: none;
+    &:after {
+      display: none;
+    }
   }
   &:hover {
     background-color: transparentize($link-hover-color, 0.1);

@@ -21,7 +21,6 @@
 .button {
   border: 1px solid transparent;
   border-radius: 3px;
-  box-shadow: none;
   color: $link-color;
   cursor: pointer;
   display: inline-block;
@@ -32,6 +31,9 @@
   transition: all 0.25s;
   -webkit-appearance: none;
 
+  &:after {
+    display: none;
+  }
   &:hover {
     background-color: $light-secondary-color;
     box-shadow: 0 1px 3px $dark-divider-color;
@@ -52,16 +54,16 @@
   &:hover,
   &:active,
   &:active:hover {
-    box-shadow: none;
+    &:after {
+      display: none;
+    }
   }
-
   &:hover,
   &:focus {
     background-color: transparent;
     border-color: $link-hover-color;
     color: $link-hover-color;
   }
-
   &:active,
   &:active:hover {
     background-color: transparentize($link-active-color, 0.9);

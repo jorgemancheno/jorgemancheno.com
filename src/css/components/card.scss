@@ -6,7 +6,7 @@
   box-shadow: 0 1px 2px $dark-divider-color;
   position: relative;
   transition-property: box-shadow, transform;
-  transition-duration: 0.25s;
+  transition-duration: $transition-duration;
 
   &:hover {
     box-shadow: 0 10px 30px $dark-secondary-color;
@@ -60,7 +60,7 @@
   justify-content: center;
   opacity: 0;
   transform: scale(1.2);
-  transition: all 0.25s;
+  transition: all $transition-duration;
 }
 .card-details-client {
   margin-bottom: 0 !important;

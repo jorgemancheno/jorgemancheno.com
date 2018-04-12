@@ -62,7 +62,10 @@ const DefaultLayout = props => {
         )}
       </Helmet>
 
-      <SiteHeader email={email} dribbbleUrl={dribbbleUrl} githubUrl={githubUrl} twitterUrl={twitterUrl} />
+      <SiteHeader email={email}
+                  dribbbleUrl={dribbbleUrl}
+                  githubUrl={githubUrl}
+                  twitterUrl={twitterUrl} />
       {children()}
     </div>
   )

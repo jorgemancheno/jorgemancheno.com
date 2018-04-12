@@ -48,6 +48,13 @@ module.exports = {
         ],
       }
     },
+    {
+      resolve: 'gatsby-plugin-svgr',
+      options: {
+        title: false,
+        viewBox: true,
+      }
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',

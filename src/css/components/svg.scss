@@ -1,0 +1,60 @@
+.svg-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg path {
+    transition: fill $transition-duration;
+  }
+
+  &:after {
+    display: none;
+  }
+  &:hover svg path {
+    fill: $link-hover-color;
+  }
+  &:active,
+  &:active:hover {
+    transform: scale(0.9);
+
+    svg path {
+      fill: $link-active-color;
+    }
+  }
+}
+.svg-link--dribbble {
+  &:hover,
+  &:active,
+  &:active:hover {
+    svg path {
+      fill: #EA4C89;
+    }
+  }
+}
+.svg-link--github {
+  &:hover,
+  &:active,
+  &:active:hover {
+    svg path {
+      fill: #0366D6;
+    }
+  }
+}
+.svg-link--twitter {
+  &:hover,
+  &:active,
+  &:active:hover {
+    svg path {
+      fill: #1DA1F2;
+    }
+  }
+}
+
+.svg-icon {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+.svg-icon--autoSize {
+  height: auto;
+  width: 100%;
+}

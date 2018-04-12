@@ -7,28 +7,10 @@
   // Nothing
 }
 
-#header-logo {
-  a,
-  img {
-    display: block;
-    height: 80px;
-    width: 80px;
-  }
-  a {
-    margin: 0 auto;
-
-    &:after {
-      display: none;
-    }
-    &:hover {
-      opacity: 0.5;
-    }
-    &:active,
-    &:active:hover {
-      opacity: 0.8;
-      transform: scale(0.9);
-    }
-  }
+#header-logo a {
+  height: 80px;
+  width: 80px;
+  margin: 0 auto;
 }
 
 #header-nav {
@@ -82,33 +64,11 @@
 #header-social {
   display: none;
 
-  li, li a, li img {
-    height: 1.8rem;
-    width: 1.8rem;
-  }
-
   li {
     flex: 1;
-    margin-right: $spacing-lg;
 
     a {
-      display: block;
-
-      &:after {
-        display: none;
-      }
-      &:hover {
-        opacity: 0.5;
-      }
-      &:active,
-      &:active:hover {
-        opacity: 0.8;
-        transform: scale(0.9);
-      }
-    }
-
-    &:last-child {
-      margin-right: 0;
+      padding: $spacing-sm;
     }
   }
 }
@@ -118,8 +78,7 @@
     padding: $spacing-sm $spacing-lg;
   }
   #header-logo {
-    a,
-    img {
+    a {
       height: 60px;
       width: 60px;
     }
@@ -176,7 +135,7 @@
 
   #header-social {
     display: flex;
-    margin: ($spacing-lg * 2) auto;
+    margin: ($spacing-md * 2) auto;
   }
 }
 

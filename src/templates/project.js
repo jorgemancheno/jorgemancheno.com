@@ -131,7 +131,7 @@ const ProjectPaginationButton = props => {
 export default ({ data, location, pathContext }) => {
   const { markdownRemark: project, prev, next } = data
   const { frontmatter, html } = project
-  const { title, client, role, thumbnail, cover } = frontmatter
+  const { title, client, role, thumbnail, cover, theme_color } = frontmatter
   const features = getFeatures(frontmatter)
   const meta = data.site.siteMetadata
   const siteTitle = `${title} — ${meta.title}`
@@ -152,6 +152,13 @@ export default ({ data, location, pathContext }) => {
         <meta property="og:title" content={siteTitle} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={thumbnailUrl} />
+        {theme_color && (
+        <style type="text/css">{`
+          #header-logo svg path {
+            fill: ${theme_color};
+          }
+        `}</style>
+        )}
       </Helmet>
       <div className="header-wrap">
         <Header className="grid-wrap">
@@ -220,6 +227,7 @@ export const query = graphql `
         title
         client
         role
+        theme_color
         thumbnail {
           childImageSharp {
             sizes(maxWidth: 720) {

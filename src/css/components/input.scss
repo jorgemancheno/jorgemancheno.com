@@ -30,7 +30,7 @@
   outline: none;
   padding: $spacing-sm;
   transition-property: background-color, border, box-shadow;
-  transition-duration: 0.25s;
+  transition-duration: $transition-duration;
   -webkit-appearance: none;
 
   &:valid {

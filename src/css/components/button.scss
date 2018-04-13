@@ -29,6 +29,7 @@
   padding: $spacing-sm;
   text-align: center;
   transition: all $transition-duration;
+  white-space: nowrap;
   -webkit-appearance: none;
 
   &:after {

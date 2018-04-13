@@ -22,6 +22,23 @@
     }
   }
 }
+.svg-link,
+.svg-link--left {
+  flex-direction: row;
+
+  .svg-text {
+    margin-left: $spacing-sm;
+  }
+}
+.svg-link--right {
+  flex-direction: row-reverse;
+
+  .svg-text {
+    margin-left: 0;
+    margin-right: $spacing-sm;
+  }
+}
+
 .svg-link--dribbble {
   &:hover,
   &:active,
@@ -51,8 +68,20 @@
 }
 
 .svg-icon {
-  height: 1.8rem;
-  width: 1.8rem;
+  height: $font-size-sm;
+  width: $font-size-sm;
+}
+.svg-icon--sm {
+  height: $font-size-sm;
+  width: $font-size-sm;
+}
+.svg-icon--md {
+  height: $font-size-md;
+  width: $font-size-md;
+}
+.svg-icon--lg {
+  height: $font-size-lg;
+  width: $font-size-lg;
 }
 .svg-icon--autoSize {
   height: auto;

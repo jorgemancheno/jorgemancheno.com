@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="12px" viewBox="0 0 13 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/Arrow/Right" transform="translate(-2.000000, -2.000000)" fill="#0B0E13">
+            <g id="arrow-right">
+                <polygon id="Arrow" points="11.5144315 8.99400638 2 8.99400638 2 6.99400638 11.5144315 6.99400638 8.15369315 3.61977911 9.39847622 2.36999989 15 7.99400638 9.39847622 13.6180129 8.15369315 12.3682337"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

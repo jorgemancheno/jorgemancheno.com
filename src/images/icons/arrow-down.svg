@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="13px" viewBox="0 0 12 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/Arrow/Down" transform="translate(-2.000000, -1.000000)" fill="#0B0E13">
+            <g id="arrow-down">
+                <polygon id="Arrow" points="8.99400638 10.5144315 12.3682337 7.15369315 13.6180129 8.39847622 7.99400638 14 2.36999989 8.39847622 3.61977911 7.15369315 6.99400638 10.5144315 6.99400638 1 8.99400638 1"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

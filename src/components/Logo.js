@@ -1,13 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import { ReactComponent as JM } from '../images/JM.svg'
+import Svg from '../components/Svg'
 
 export default () => {
   return (
     <h1 id="header-logo">
       <Link to="/" className="svg-link">
-        <JM className="svg-icon svg-icon--autoSize" />
+        <Svg type="JM" className="svg-icon--autoSize" />
       </Link>
     </h1>
   )

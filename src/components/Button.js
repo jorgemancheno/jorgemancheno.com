@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 const Type = {
   link(props) {
     return(
-      <Link to={props.children} {...props}>
+      <Link to={props.to} {...props}>
         {props.children}
       </Link>
     )
@@ -20,7 +20,7 @@ const Type = {
         {props.children}
       </button>
     )
-  }
+  },
 }
 
 export default (props) => {

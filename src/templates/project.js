@@ -7,6 +7,7 @@ import Header from '../components/Header'
 import Heading from '../components/Heading'
 import ProjectCard from '../components/ProjectCard'
 import Button from '../components/Button'
+import Svg from '../components/Svg'
 
 const ProjectCover = props => {
   const { src, ...rest } = props
@@ -157,6 +158,13 @@ export default ({ data, location, pathContext }) => {
           #header-logo svg path {
             fill: ${theme_color};
           }
+          #header-logo a:hover {
+            opacity: 0.8;
+          }
+          #header-logo a:active,
+          #header-logo a:active:hover {
+            opacity: 1;
+          }
         `}</style>
         )}
       </Helmet>
@@ -169,10 +177,10 @@ export default ({ data, location, pathContext }) => {
             </div>
             <div className="button-group grid-cell u-sm-1of2">
               {prev && (
-              <Button type="link" to={prev.fields.slug} className="button--outline button--sm u-sm-1of2">Previous</Button>
+              <Button type="link" to={prev.fields.slug} className="button--outline button--sm u-sm-1of2 svg-link"><Svg type="arrowLeft" /></Button>
               )}
               {next && (
-                <Button type="link" to={next.fields.slug} className="button--outline button--sm u-sm-1of2">Next</Button>
+                <Button type="link" to={next.fields.slug} className="button--outline button--sm u-sm-1of2 svg-link"><Svg type="arrowRight" /></Button>
               )}
             </div>
           </div>

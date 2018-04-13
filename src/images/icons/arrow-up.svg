@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="13px" viewBox="0 0 12 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-up</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/Arrow/Up" transform="translate(-2.000000, -1.000000)" fill="#0B0E13">
+            <g id="arrow-up">
+                <polygon id="Arrow" points="8.99400638 4.48556849 8.99400638 14 6.99400638 14 6.99400638 4.48556849 3.61977911 7.84630685 2.36999989 6.60152378 7.99400638 1 13.6180129 6.60152378 12.3682337 7.84630685"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

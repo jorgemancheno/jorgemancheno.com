@@ -11,6 +11,11 @@
   height: 80px;
   width: 80px;
   margin: 0 auto;
+
+  &:active,
+  &:active:hover {
+    transform: scale(0.9);
+  }
 }
 
 #header-nav {
@@ -69,6 +74,11 @@
 
     a {
       padding: $spacing-sm;
+
+      &:active,
+      &:active:hover {
+        transform: scale(0.9);
+      }
     }
   }
 }
@@ -114,11 +124,11 @@
   }
 
   #header-logo {
-    margin: ($spacing-lg * 3) ($spacing-lg * 2);
+    margin: ($spacing-lg * 3) $spacing-xl;
   }
 
   #header-nav {
-    margin: -($spacing-lg) ($spacing-lg * 2) 0;
+    margin: -($spacing-lg) $spacing-xl 0;
 
     ul {
       display: block;

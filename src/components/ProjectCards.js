@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard'
 
 const ProjectCards = props => {
   return (
-    <div className="projects grid-wrap" {...props}>
+    <div {...props}>
       <div className="grid grid--gutters">
         {props.children}
       </div>
@@ -13,10 +13,15 @@ const ProjectCards = props => {
 }
 
 export default (props) => {
-  const { projects, ...rest } = props
+  const { projects, className, ...rest } = props
+  let classes = 'projects-grid grid-wrap'
+
+  if (className !== undefined) {
+    classes = classes + ' ' + className
+  }
 
   return (
-    <ProjectCards {...rest}>
+    <ProjectCards className={classes} {...rest}>
     {projects.map(({ node }, i) => (
       <div key={i} className="grid-cell u-full u-md-1of2 u-lg-1of2">
         <ProjectCard slug={node.fields.slug}

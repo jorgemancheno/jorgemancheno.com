@@ -19,6 +19,8 @@ const DefaultLayout = props => {
   const isProjects = pathname.slice(0,10) == '/projects/'
   const isAbout = pathname.slice(0,7) == '/about/'
   const isContact = pathname.slice(0,9) == '/contact/'
+  const isArchive = pathname.slice(9,18) == '/archive/'
+  const isInverted = isAbout || isArchive
   const meta = data.site.siteMetadata
   const { email, dribbbleUrl, githubUrl, twitterUrl } = meta
 
@@ -57,7 +59,7 @@ const DefaultLayout = props => {
               href={logoSVG} />
         <link rel="canonical" href={`${meta.siteUrl}${pathname}`} />
         <html lang="en" />
-        {isAbout && (
+        {isInverted && (
           <body className="invert" />
         )}
       </Helmet>

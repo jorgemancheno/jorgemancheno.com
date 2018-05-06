@@ -1,7 +1,7 @@
 #site-footer {
   font-size: $font-size-sm;
   color: $dark-hint-color;
-  margin-bottom: ($spacing-lg * 2);
+  margin-bottom: $spacing-xl;
 
   a {
     &:after {
@@ -34,7 +34,7 @@
 }
 @include device-md {
   #site-footer-content {
-    padding-bottom: ($spacing-lg * 2);
+    padding-bottom: $spacing-xl;
   }
 }
 #footer-nav {
@@ -55,12 +55,12 @@
       background-color: $light-hint-color;
     }
     &:hover:after {
-      background-color: lighten($link-hover-color, 20);
+      background-color: $link-hover-color-invert;
     }
     &:active,
     &:active:hover {
       &:after {
-        background-color: lighten($link-active-color, 20);
+        background-color: $link-active-color-invert;
       }
     }
   }

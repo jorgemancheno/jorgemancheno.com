@@ -2,7 +2,7 @@ import React from 'react'
 
 export default (props) => {
   const { className, ...rest } = props
-  var classes = 'header'
+  let classes = 'header'
 
   if (className !== undefined) {
     classes = classes + ' ' + className

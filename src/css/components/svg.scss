@@ -10,18 +10,41 @@
   &:after {
     display: none;
   }
-  &:hover svg path {
-    fill: $link-hover-color;
+  &:hover,
+  &:focus {
+    svg path {
+      fill: $link-hover-color;
+    }
   }
   &:active,
   &:active:hover {
-    transform: scale(0.9);
+    transform: scale(0.98);
 
     svg path {
       fill: $link-active-color;
     }
   }
 }
+.invert #container {
+  .svg-link {
+    svg path {
+      fill: $light-primary-color;
+    }
+    &:hover,
+    &:focus {
+      svg path {
+        fill: $link-hover-color-invert;
+      }
+    }
+    &:active,
+    &:active:hover {
+      svg path {
+        fill: $link-active-color-invert;
+      }
+    }
+  }
+}
+
 .svg-link,
 .svg-link--left {
   flex-direction: row;

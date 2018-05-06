@@ -6,9 +6,6 @@ $header-bg: rgba(255,255,255,1);
 $header-width-lg: 220px;
 $header-width-xl: 260px;
 
-$content-bg: rgba(245,245,245,1);
-$content-bg-invert: rgba(11,14,19,1);
-
 $dark-base-color: rgba(11,14,19,1);
 $dark-primary-color: transparentize($dark-base-color, 0.25);
 $dark-secondary-color: transparentize($dark-base-color, 0.5);
@@ -23,9 +20,16 @@ $light-hint-color: transparentize($light-base-color, 0.65);
 $light-divider-color: transparentize($light-base-color, 0.85);
 $light-divider-alt-color: transparentize($light-base-color, 0.95);
 
+$content-bg: rgba(245,245,245,1);
+$content-bg-invert: $dark-base-color;
+
 $link-color: rgba(93,115,224,1);
 $link-hover-color: rgba(43,40,234,1);
-$link-active-color: darken($link-hover-color, 15%);
+$link-active-color: rgba(20,18,180,1);
+
+$link-color-invert: lighten($link-color, 10);
+$link-hover-color-invert: lighten($link-hover-color, 20);
+$link-active-color-invert: lighten($link-active-color, 20);
 
 $font-size-sm: 1.4rem;
 $font-size-md: 1.6rem;
@@ -34,5 +38,6 @@ $font-size-lg: 1.8rem;
 $spacing-sm: 1rem;
 $spacing-md: 1.5rem;
 $spacing-lg: 2rem;
+$spacing-xl: 4rem;
 
 $transition-duration: 0.25s;

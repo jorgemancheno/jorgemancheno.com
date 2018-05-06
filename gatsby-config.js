@@ -3,7 +3,7 @@ module.exports = {
     title: 'Jorge Mancheno, Product Designer',
     author: 'Jorge Mancheno',
     description: 'Jorge Mancheno is a product designer and front-end developer based in Brooklyn, NY.',
-    siteUrl: 'http://jorgemancheno.com',
+    siteUrl: 'https://jorgemancheno.com',
     email: 'hello@jorgemancheno.com',
     dribbbleUrl: 'https://dribbble.com/jorgemancheno',
     githubUrl: 'https://github.com/jorgemancheno',

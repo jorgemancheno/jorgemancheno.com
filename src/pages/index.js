@@ -10,7 +10,7 @@ import ProjectCards from '../components/ProjectCards'
 import Button from '../components/Button'
 
 export default ({ data }) => {
-  const { edges: projects } = data.allMarkdownRemark
+  const { edges: projects } = data.projects
   const pageTitle = "Welcome"
   const { twitterUrl } = data.site.siteMetadata
 
@@ -43,8 +43,11 @@ export const query = graphql `
         twitterUrl
       }
     }
-    allMarkdownRemark(sort: {fields: [frontmatter___id], order: DESC}, limit: 2) {
-      totalCount
+    projects: allMarkdownRemark(
+      limit: 2
+      sort: {fields: [frontmatter___id], order: DESC}
+      filter: { frontmatter: { archive: { ne: true } } }
+    ) {
       edges {
         node {
           id

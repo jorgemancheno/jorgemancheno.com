@@ -6,6 +6,7 @@ role: "Design & Development"
 thumbnail: "thumbnail.png"
 cover: "cover.png"
 theme_color: "#717171"
+archive: true
 ---
 
 The LimeWire P2P client's online marketing site.

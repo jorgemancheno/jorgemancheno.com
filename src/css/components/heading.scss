@@ -67,26 +67,6 @@ h6.heading {
   margin-bottom: $spacing-sm;
 }
 
-.invert {
-  .heading {
-    color: $light-base-color;
-  }
-  .header,
-  h2.heading,
-  h3.heading {
-    border-bottom-color: $light-divider-color;
-  }
-  h2.heading,
-  h3.heading {
-    span {
-      border-bottom-color: $light-secondary-color;
-    }
-  }
-  h5.heading {
-    color: $light-secondary-color;
-  }
-}
-
 @include device-sm {
   .header {
     border-bottom: 0;
@@ -112,5 +92,25 @@ h6.heading {
   }
   h3.heading {
     font-size: $spacing-lg;
+  }
+}
+
+.invert {
+  .heading {
+    color: $light-base-color;
+  }
+  .header,
+  h2.heading,
+  h3.heading {
+    border-bottom-color: $light-divider-color;
+  }
+  h2.heading,
+  h3.heading {
+    span {
+      border-bottom-color: $light-secondary-color;
+    }
+  }
+  h5.heading {
+    color: $light-secondary-color;
   }
 }

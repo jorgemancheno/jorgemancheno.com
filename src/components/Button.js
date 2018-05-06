@@ -27,7 +27,7 @@ export default (props) => {
   const { className, ...rest } = props
   const type = (props.type !== undefined) ? props.type : 'button'
   const Button = Type[type]
-  var classes = 'button'
+  let classes = 'button'
 
   if (className !== undefined) {
     classes = classes + ' ' + className

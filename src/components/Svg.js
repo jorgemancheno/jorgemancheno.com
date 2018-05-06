@@ -46,7 +46,7 @@ export default ({ type, className, ...rest }) => {
   const Svg = Type[type]
 
   if (typeof Svg === 'function') {
-    var classes = 'svg-icon'
+    let classes = 'svg-icon'
 
     if (className !== undefined) {
       classes = classes + ' ' + className

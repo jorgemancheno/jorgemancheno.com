@@ -66,7 +66,7 @@ const getFeatures = (data) => {
 
 const ProjectFeatures = props => {
   const { features, className, ...rest } = props
-  var classes = 'project-features grid grid--gutters sm-grid--full md-grid--full'
+  let classes = 'project-features grid grid--gutters sm-grid--full md-grid--full'
 
   if (className !== undefined) {
     classes = classes + ' ' + className
@@ -92,7 +92,7 @@ const ProjectFeatures = props => {
 const ProjectFeature = props => {
   const { src, className, ...rest } = props
   const { sizes } = (src && src.childImageSharp) ? src.childImageSharp : {}
-  var classes = 'project-feature grid-cell'
+  let classes = 'project-feature grid-cell'
 
   if (className !== undefined) {
     classes = classes + ' ' + className
@@ -130,20 +130,35 @@ const ProjectPaginationButton = props => {
 }
 
 export default ({ data, location, pathContext }) => {
-  const { markdownRemark: project, prev, next } = data
+  const { project, prev, next } = data
   const { frontmatter, html } = project
   const { title, client, role, thumbnail, cover, theme_color } = frontmatter
   const features = getFeatures(frontmatter)
+  const isArchive = location.pathname.slice(9,18) == '/archive/'
   const meta = data.site.siteMetadata
   const siteTitle = `${title} — ${meta.title}`
 
   let description = html.replace(/<[^>]+>/g, '')
+  
   let thumbnailUrl
   let thumbnailImage = thumbnail.childImageSharp.sizes.src
   if (process.env.NODE_ENV === 'production') {
     thumbnailUrl = meta.siteUrl + thumbnailImage
   } else {
     thumbnailUrl = thumbnailImage
+  }
+
+  let more = {}
+  if (isArchive) {
+    more = {
+      label: 'More Archived',
+      location: '/projects/archive/',
+    }
+  } else {
+    more = {
+      label: 'More Projects',
+      location: '/projects/',
+    }
   }
 
   return (
@@ -173,7 +188,7 @@ export default ({ data, location, pathContext }) => {
           <Heading level="2">{title}</Heading>
           <div className="button-group grid grid--gutters">
             <div className="grid-cell">
-              <Button type="link" to="/projects/" className="button--outline button--sm u-sm-full">More Projects</Button>
+              <Button type="link" to={more.location} className="button--outline button--sm u-sm-full">{more.label}</Button>
             </div>
             <div className="button-group grid-cell u-sm-1of2">
               {prev && (
@@ -229,7 +244,9 @@ export const query = graphql `
         siteUrl
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug }}) {
+    project: markdownRemark(
+      fields: { slug: { eq: $slug }}
+    ) {
       html
       frontmatter {
         title

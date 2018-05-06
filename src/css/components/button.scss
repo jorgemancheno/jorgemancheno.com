@@ -73,6 +73,25 @@
     transform: scale(0.98);
   }
 }
+.invert {
+  .button--outline {
+    border-color: $light-hint-color;
+    color: $light-primary-color;
+
+    &:hover,
+    &:focus {
+      border-color: $link-hover-color-invert;
+      color: $link-hover-color-invert;
+    }
+    &:active,
+    &:active:hover {
+      background-color: transparentize($link-active-color-invert, 0.9);
+      border-color: $link-active-color-invert;
+      color: $link-active-color-invert;
+    }
+  }
+}
+
 .button--full {
   display: block;
   text-align: center;

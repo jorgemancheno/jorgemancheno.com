@@ -23,7 +23,22 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
     graphql(`
       {
-        allMarkdownRemark(sort: {fields: [frontmatter___id], order: DESC}) {
+        projects: allMarkdownRemark(
+          sort: {fields: [frontmatter___id], order: DESC}
+          filter: { frontmatter: { archive: { ne: true } } }
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+            }
+          }
+        }
+        archive: allMarkdownRemark(
+          sort: {fields: [frontmatter___id], order: DESC}
+          filter: { frontmatter: { archive: { ne: false } } }
+        ) {
           edges {
             node {
               fields {
@@ -35,21 +50,26 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       }
       `
     ).then(result => {
-      const projects = result.data.allMarkdownRemark.edges
-      const count = projects.length
+      const groups = result.data
 
-      projects.forEach(({ node }, index) => {
-        const prev = (index === 0) ? projects[count - 1] : projects[index - 1]
-        const next = (index === (count - 1)) ? projects[0] : projects[index + 1]
+      Object.keys(groups).forEach(( k ) => {
+        const group = groups[k]
+        const nodes = group.edges
+        const count = nodes.length
 
-        createPage({
-          path: node.fields.slug,
-          component: projectTemplate,
-          context: {
-            slug: node.fields.slug,
-            prev: prev.node.fields.slug,
-            next: next.node.fields.slug,
-          },
+        nodes.forEach(({ node }, index) => {
+          const prev = (index === 0) ? nodes[count - 1] : nodes[index - 1]
+          const next = (index === (count - 1)) ? nodes[0] : nodes[index + 1]
+
+          createPage({
+            path: node.fields.slug,
+            component: projectTemplate,
+            context: {
+              slug: node.fields.slug,
+              prev: prev.node.fields.slug,
+              next: next.node.fields.slug,
+            }
+          })
         })
       })
       resolve()

@@ -1,7 +1,7 @@
 {
   "name": "jorgemancheno.com",
   "description": "Personal site.",
-  "homepage": "http://jorgemancheno.com",
+  "homepage": "https://jorgemancheno.com",
   "author": "Jorge Mancheno <git@jorgemancheno.com>",
   "version": "1.0.0",
   "dependencies": {

@@ -48,7 +48,7 @@ const Type = {
 export default (props) => {
   const { level, className, ...rest } = props
   const Heading = Type['h' + level]
-  var classes = 'heading'
+  let classes = 'heading'
 
   if (className !== undefined) {
     classes = classes + ' ' + className

@@ -1,11 +1,23 @@
+.projects-grid {
+  margin-bottom: $spacing-xl;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .project-cover {
   background-color: $dark-divider-color;
-  margin: ($spacing-lg * 2) 0;
+  margin: $spacing-xl 0;
   overflow: hidden;
 }
 .project-details {
-  margin-bottom: ($spacing-lg * 3);
+  margin-bottom: $spacing-xl;
+
+  & > .grid {
+    padding-bottom: $spacing-lg;
+  }
 }
 .project-features {
-  margin-bottom: ($spacing-lg * 2);
+  margin-bottom: $spacing-xl;
 }

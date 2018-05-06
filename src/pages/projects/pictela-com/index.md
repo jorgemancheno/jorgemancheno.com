@@ -8,6 +8,7 @@ cover: "cover.png"
 feature_1: "feature_1.png"
 feature_2: "feature_2.png"
 theme_color: "#B8301C"
+archive: false
 ---
 
 A complete redesign of the Pictela site. It included the recently redesigned branding, a pseudo-live demo of our 300 x 1050 "Devil" ad format with introductory videos, and a brief high-level overview of the Pictela platform.

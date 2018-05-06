@@ -103,22 +103,26 @@ dl {
 
   a {
     &:after {
-      background-color: lighten($link-color, 10);
+      background-color: $link-color-invert;
     }
     &:hover {
-      color: lighten($link-hover-color, 20);
+      color: $link-hover-color-invert;
 
       &:after {
-        background-color: lighten($link-hover-color, 20);
+        background-color: $link-hover-color-invert;
       }
     }
     &:active,
     &:active:hover {
-      color: lighten($link-active-color, 20);
+      color: $link-active-color-invert;
 
       &:after {
-        background-color: lighten($link-active-color, 20);
+        background-color: $link-active-color-invert;
       }
     }
+  }
+
+  dl dd {
+    color: $light-secondary-color;
   }
 }

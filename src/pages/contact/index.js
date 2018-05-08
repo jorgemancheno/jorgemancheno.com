@@ -13,7 +13,7 @@ const ContactDetails = props => {
 
   return (
     <div id="contact-details" className="grid-wrap">
-      <p><strong>Need to get in touch or just want to say hello?</strong> You can <Obfuscate email={email}>email me</Obfuscate> directly or by using the form below. I&#39;m also on <OutboundLink href={dribbbleUrl} target="_blank">Dribbble</OutboundLink>, <OutboundLink href={githubUrl} target="_blank">GitHub</OutboundLink>, and <OutboundLink href={twitterUrl} target="_blank">Twitter</OutboundLink>.</p>
+      <p><strong>Need to get in touch or just want to say hello?</strong> You can <Obfuscate email={email}>email me</Obfuscate> directly or by using the form below. I&#39;m also on <OutboundLink href={dribbbleUrl} className="link-external" target="_blank">Dribbble</OutboundLink>, <OutboundLink href={githubUrl} className="link-external" target="_blank">GitHub</OutboundLink>, and <OutboundLink href={twitterUrl} className="link-external" target="_blank">Twitter</OutboundLink>.</p>
     </div>
   )
 }

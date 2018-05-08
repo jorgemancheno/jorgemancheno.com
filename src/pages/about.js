@@ -68,7 +68,7 @@ export default ({ data }) => {
         <p>Jorge Mancheno is a product designer and front-end developer based in Brooklyn, NY. He&#39;s known for his love of Apple products, extensive sneaker collection, and appreciation of Marvel movies/shows.</p>
         <p>Jorge thrives in a collaborative environment. He&#39;s worked with various development teams over the years to bring early concepts from an initial prototype/wireframe stage to fully polished consumer and enterprise products. A designer first, Jorge also enjoys bringing ideas to life with production ready HTML, CSS, and on occasion JS.</p>
         <h5 className="heading">The Site</h5>
-        <p>This version of the site was built from scratch using <OutboundLink href="https://www.gatsbyjs.org/" target="_blank">Gatsby</OutboundLink> and is hosted at <OutboundLink href="https://www.digitalocean.com/" target="_blank">DigitalOcean</OutboundLink>. You can view it&#39;s source code on <OutboundLink href="https://github.com/jorgemancheno/jorgemancheno.com" target="_blank">GitHub</OutboundLink>.</p>
+        <p>This version of the site was built from scratch using <OutboundLink href="https://www.gatsbyjs.org/" className="link-external" target="_blank">Gatsby</OutboundLink> and is hosted at <OutboundLink href="https://www.digitalocean.com/" className="link-external" target="_blank">DigitalOcean</OutboundLink>. You can view it&#39;s source code on <OutboundLink href="https://github.com/jorgemancheno/jorgemancheno.com" className="link-external" target="_blank">GitHub</OutboundLink>.</p>
       </Bio>
 
       <Experience>

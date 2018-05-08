@@ -22,7 +22,7 @@ export default ({ data }) => {
 
       <div id="welcome">
         <div className="grid-wrap">
-          <p>Jorge Mancheno is a product designer based in Brooklyn, NY. You can <Link to="/contact/">say hello</Link>, <OutboundLink href={twitterUrl} target="_blank">follow him</OutboundLink>, or <Link to="/projects/">see his work</Link>.</p>
+          <p>Jorge Mancheno is a product designer based in Brooklyn, NY. You can <Link to="/contact/">say hello</Link>, <OutboundLink href={twitterUrl} className="link-external" target="_blank">follow him</OutboundLink>, or <Link to="/projects/">see his work</Link>.</p>
         </div>
       </div>
 

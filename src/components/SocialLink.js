@@ -15,21 +15,21 @@ const LinkContainer = props => {
 const LinkTypes = {
   dribbble(props) {
     return (
-      <OutboundLink href={props.url} className="svg-link svg-link--dribbble" target="_blank">
+      <OutboundLink href={props.url} className="link-external svg-link svg-link--dribbble" target="_blank">
         <Svg type="socialDribbble" className="svg-icon--lg" />
       </OutboundLink>
     )
   },
   github(props) {
     return (
-      <OutboundLink href={props.url} className="svg-link svg-link--github" target="_blank">
+      <OutboundLink href={props.url} className="link-external svg-link svg-link--github" target="_blank">
         <Svg type="socialGithub" className="svg-icon--lg" />
       </OutboundLink>
     )
   },
   twitter(props) {
     return (
-      <OutboundLink href={props.url} className="svg-link svg-link--twitter" target="_blank">
+      <OutboundLink href={props.url} className="link-external svg-link svg-link--twitter" target="_blank">
         <Svg type="socialTwitter" className="svg-icon--lg" />
       </OutboundLink>
     )

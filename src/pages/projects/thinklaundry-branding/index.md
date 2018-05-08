@@ -6,7 +6,7 @@ role: "Design"
 thumbnail: "thumbnail.png"
 cover: "cover.png"
 feature_1: "feature_1.png"
-archive: false
+archive: true
 ---
 
 An unused identity for a New York City-based startup.

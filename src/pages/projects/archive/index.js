@@ -21,7 +21,7 @@ export default ({ data }) => {
       <div className="header-wrap">
         <Header className="grid-wrap">
           <Heading level="2">{pageTitle}</Heading>
-          <Button type="link" to="/projects/" className="button--outline button--sm u-sm-full">More Projects</Button>
+          <Button type="link" to="/projects/" className="button--outline button--sm u-sm-full">Recent Projects</Button>
         </Header>
       </div>
 

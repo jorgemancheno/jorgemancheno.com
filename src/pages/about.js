@@ -77,7 +77,7 @@ export default ({ data }) => {
                   company="AOL Inc">
           <p>Designed AOL&#39;s replacement for Google Reader which included a marketing site, and responsive web/mobile versions of the RSS reader interface. The responsive web interface and feature set was constantly evolving based on user feedback, and later versions adopted a more modern look and feel.</p>
           <p>Designed adaptive web interfaces for AOL&#39;s Content Hub platform which was an enterprise-ready set of tools for creating, consuming, and monetizing publisher content. Developed and maintained guidelines for every interface component used in the platform. Led efforts to have other products under the AOL Publishers umbrella adopt the look and feel used by Content Hub.</p>
-          <p>Lead design for a news consumption app built for iOS and Android that featured custom channels a user could create, follow and share, and built-in chat/alarm clock functionality. Worked with an outside vendor to iterate through the design and helped oversee its development.</p>
+          <p>Lead design for a news consumption app built for iOS and Android that featured the ability to create custom news channels a user could follow and share with other users, built-in chat, and alarm clock functionality. Worked with an outside vendor to iterate through the design and helped oversee its development.</p>
           <p>Worked closely with the Athena product team on the Athena Content Services platform, a reimagining of AOL Publishers. Lead design for the platform as a whole, helped develop the Athena Owl branding, and consulted on the marketing site. Designed and developed an HTML/CSS framework for the Athena suite of products.</p>
         </Position>
 

@@ -18,6 +18,11 @@
     }
   }
 }
+@include device-sm {
+  .header > .button-group {
+    padding-bottom: $spacing-lg;
+  }
+}
 .button {
   border: 1px solid transparent;
   border-radius: 3px;

@@ -82,7 +82,7 @@ export default ({ data }) => {
         </Position>
 
         <Position start="2010" end="2013"
-                  title="Principle UI Designer"
+                  title="Senior UI Designer"
                   company="AOL Inc / Pictela Inc">
           <p>Iterated on the design of Pictela&#39;s ad formats following the company&#39;s acquisition by AOL Inc in late-2010. Creative direction for AOL&#39;s Project Devil ad format was taken over, and an overall visual treatment for all of the supported ad units was established. Styleguides defining each ad format&#39;s configuration and best use practices were created and later distributed to publishers looking to adopt Pictela ads. Consulted on the design of additional ad units later on.</p>
           <p>Designed and contributed to the development of version 3 of the Pictela Management Console. Work included the design of workflows used for managing campaigns, assets, ad units, and a tool that generated exportable reports based on user input.</p>
